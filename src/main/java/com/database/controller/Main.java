@@ -7,6 +7,14 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+/*
+ASSUMPTIONS:
+    1. ADD EXAM PatientID ExamID: One ExamID is associated with one patient. No two patient can have same ExamID
+    2. DEL EXAM ID: Delete ExamID from the database and from the patient's exam list for whom the exam was created
+    3. Output is printed in ascending order of PatientID
+ */
+
+
 public class Main {
     private static Database db = new Database();
 

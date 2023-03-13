@@ -7,17 +7,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-/*
-ASSUMPTIONS:
-    1. ADD EXAM PatientID ExamID: One ExamID is associated with one patient. No two patient can have same ExamID
-    2. DEL EXAM ID: Delete ExamID from the database and from the patient's exam list for whom the exam was created
-    3. Output in printed in ascending order of PatientID
- */
 
 public class Database {
 
     private Map<Integer, Patient> patientTable; // patientID, Patient obj
-    private HashMap<Integer, Exam> examTable; //examID, Exam obj  //(OR eid, patientIDs)
+    private HashMap<Integer, Exam> examTable; //examID, Exam obj
 
 
     public Database() {
@@ -86,9 +80,7 @@ public class Database {
     }
 
 
-    //ASSUMPTION : Deleting exam id implies deleting it from the patient's exam list
     public boolean deleteExam(int examID) {
-
         //check if examID exists to delete
         if (examTable.containsKey(examID)) {
 
