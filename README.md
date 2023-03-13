@@ -8,9 +8,9 @@ This project creates an in-memory database that stores patient details and exam 
 
 The database supports the following commands:
 
-### `ADD PATIENT patientid`
+### `ADD PATIENT patientid patientname`
 
-Adds a patient with the given patientid to the database if a patient with given ID does not already exist.
+Adds a patient with the given patientid and patientname to the database if a patient with given patientid does not already exist.
 
 ### `ADD EXAM patientid examid`
 
@@ -34,5 +34,5 @@ In developing this database, follwoing assumptions have been made.
 
 ## Usage
 
-To use this database, simply clone the repository and run the `main.java` file. It line by line runs the commands listed in instructions.txt file can add, delete, and query patients and exams using the commands listed above.
-The command must follow the format listed now.
+To use this database, simply clone the repository and run the `main.java` file. It line by line runs the commands listed in instructions.txt file. You can add, delete, and query patients and exams using the commands listed above.
+Commands must follow the format listed now.
