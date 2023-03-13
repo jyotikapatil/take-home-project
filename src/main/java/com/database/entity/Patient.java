@@ -1,5 +1,6 @@
 package com.database.entity;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Patient {
@@ -8,10 +9,10 @@ public class Patient {
     private String name;
     private Set<Integer> exams;
 
-    public Patient(int patientId, String name, Set<Integer> exams) {
+    public Patient(int patientId, String name) {
         this.patientId = patientId;
         this.name = name;
-        this.exams = exams;
+        this.exams = new HashSet<>();
     }
 
     public int getPatientId() {

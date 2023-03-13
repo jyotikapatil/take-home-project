@@ -30,7 +30,7 @@ public class Exam {
     public String toString() {
         return "Exam{" +
                 "examID=" + examID +
-                ", patientID=" + patientID +  //TODO
+                ", patientID=" + patientID +
                 '}';
     }
 }
